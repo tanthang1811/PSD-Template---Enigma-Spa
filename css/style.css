@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #9b59b6;
+    --darker-primary-color: #be2edd;
+    --concrete-color: #95a5a6;
+}
+
+/*******Navigator*******/
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.nav-link{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--concrete-color);
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.nav-link:hover, .nav-link.active{
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+/****************Home Page***********/
+
+/*Banner*/
+.banner{
+    height: 60vh;
+    width: 100%;
+}
+
+.banner ul li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner-indicators {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner-indicators li{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: 
+    url("../images/pags.png");
+}
+
+.banner-indicators li:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner-indicators li.active{
+    background-position-y: 1.2rem;
+}
+
+/*Home Row & Items*/
+
+.home-row{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.home-item{
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-item img{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+}
+
+.home-item figcaption{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.home-item::after{
+    position: absolute;
+    content: "";
+    width: 2rem;
+    height: 1.9rem;
+    display: inline-block;
+    background-image: url("../images/marker-1.png");
+    right: 30px;
+    bottom: 13px;
+}
+
+.home-item:hover::after{
+    background-position-y: 1.9rem;
+}
+
+/****************About***********/
+.about-item > *{
+    margin-bottom: 20px;
+}
+
+.about-item ul li a{
+    color: #FFF;
+}
+
+.about-item-wrapper .row > *{
+    margin-bottom: 35px;
+}
+
+/***********Services***********/
+.service-item ul li a{
+    color: #FFF;
+}
+
+.service-item > * {
+    margin-bottom: 20px;
+} 
+
+.service-item img{
+    margin-bottom: 50px;
+} 
+
+/*********Gallery*********/
+.gallery-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.gallery-item{
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.gallery-item:hover{
+    filter: saturate(50%) brightness(80%) contrast(100%);
+    -webkit-filter: saturate(50%) brightness(80%) contrast(100%);
+}
+
+/********Footer*******/
+footer{
+    padding-top: 12px;
+    padding-bottom: 2px;
+    background-color: #000;
+    text-align: center;
+}

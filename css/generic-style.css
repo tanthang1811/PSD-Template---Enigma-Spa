@@ -1,0 +1,51 @@
+/*Colors*/
+.text-color-concrete{
+    color: var(--concrete-color) !important;
+}
+
+.text-color-primary{
+    color: var(--primary-color) !important;
+}
+
+.text-color-white{
+    color: #FFF;
+}
+
+/*Normal Banner*/
+.normal-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*Button*/
+.btn-primary-color{
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.btn-primary-color:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+/*Wrapper*/
+.wrapper{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    max-width: 992px;
+}
+
+/*Section Header*/
+.section-header{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
