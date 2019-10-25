@@ -41,6 +41,7 @@
     bottom: 0;
     z-index: -1;
     opacity: 0;
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
 }
 
@@ -52,7 +53,8 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -150,6 +152,7 @@
 
 .gallery-item{
     position: relative;
+    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
